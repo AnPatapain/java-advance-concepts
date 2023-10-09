@@ -20,6 +20,14 @@ public class Employee {
     public Employee() {
     }
 
+    public String getNom() {
+        return nom;
+    }
+
+    public String getPrenom() {
+        return prenom;
+    }
+
     public int getNumeroEmp() {
         return numeroEmp;
     }
@@ -36,8 +44,9 @@ public class Employee {
         return 12 * salaireMensuel + primeAnnuelle;
     }
 
+    @Override
     public String toString() {
-        return this.getNomPrenom() + ", " + this.getSalaireAnuelle();
+        return this.nom + ", " + this.prenom + ", " + this.salaireMensuel + ", " + this.primeAnnuelle + ", " + this.numeroEmp;
     }
 }
 
